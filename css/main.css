@@ -1,0 +1,58 @@
+body {
+    background-color: green;
+}
+
+.desc {
+    overflow: auto;
+    height: 100px;
+    padding: 10px;
+    background-color: #444444;
+    color: aliceblue;
+
+
+}
+
+.details * {
+    text-align: left;
+}
+
+.myitem {
+    color: white;
+    background-color: brown;
+    border: 1px solid yellow;
+
+}
+
+.episode-alert {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 158, 62, 0.8);
+    z-index: 999;
+}
+
+.episode-alert div.text-center {
+    min-height: 250px;
+    max-height: 80%;
+    max-width: 720px;
+    background-color: #fff;
+    border: 1px solid green;
+
+}
+
+.epi-list {
+    height: 200px;
+    overflow: auto;
+    color: yellow;
+    background-color: #333333;
+    border-radius: 15px;
+    scrollbar-color: yellow blue;
+}
+
+.showEp {
+    background-color: gray;
+    cursor: pointer;
+}
+.zindex{
+    z-index: 5000;
+}

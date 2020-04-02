@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Anime Shounen</title>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/AnimeShow.js"></script>
+    <script src="js/Episodes.js"></script>
+
+
+</head>
+
+<body>
+    <div id="id_episodes" class="d-none">
+        <div class="episode-alert container-fluid d-flex align-items-center justify-content-center">
+            <div class="text-center p-2 overflow-auto">
+                <img src="https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6"
+                    class="w-25 mb-3">
+                <h2>The Legendary Hero</h2>
+                <p class="overflow-auto h-75">
+                    <ol class=" text-left epi-list" id="id_list_episodes">
+                        <li>Densetsu no Yuusha\u00a0 <a target="_blank"
+                                href="https:\/\/myanimelist.net\/anime\/298\/hack__Tasogare_no_Udewa_Densetsu\/episode\/1">link</a>
+                            OnAir: 2003-01-09T00:00:00+00:00
+                        </li>
+                        <li>Sasuke and Sakura: Friends or Foes?</li>
+
+                    </ol>
+                </p>
+                <h6>
+                    <form action="">
+                        <label for="">Episode Page Number: </label>
+                        <select name="episodePage" id="episodePage">
+                            <option value="1" selected>1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+
+                        </select>
+
+
+                    </form>
+                </h6>
+                <button onclick='hideById("id_episodes")' class="btn btn-danger mb-3">close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid d-flex">
+            <div class="row w-100 align-items-center text-center justify-content-center">
+                <div class="col-10">
+                    <div class="row w-100">
+                        <div class="col-12 text-center bg-warning">
+                            <h2>
+                                Shounen Anime List
+                            </h2>
+                            <h3 id="id_dbscale">DB scale: 1945 </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 w-100 text-center">
+
+                            <form action="">
+                                <label for="" class="text-warning mt-2">PageNumber</label>
+                                <select name="animePage" id="animePage">
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                                    <option value="1">4</option>
+                                    <option value="1">5</option>
+
+                                </select>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="overflow-auto row w-100 " id="anime_container" style="height: 75vh;margin:0 auto">
+            <div class="col-lg-4  myitem">
+                <div class="h4">Naruto Shipuden</div>
+                <img class="rounded w-75"
+                    src="https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6"
+                    alt="">
+                <p>
+                    <p title="Click for Details" class="showEp"
+                        onclick="showEpisodes('naruto','https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6')">
+                        Episodes: 220</p>
+                    <p>synopsis</p>
+                    <p class="overflow-auto desc rounded">"Moments prior to Naruto Uzumaki's birth, a huge demon
+                        known
+                        as the
+                        Kyuubi, the
+                        Nine-Tailed Fox,
+                        attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to
+                        the
+                        Kyuubi
+                    </p>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
